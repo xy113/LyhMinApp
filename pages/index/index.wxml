@@ -1,13 +1,40 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<view class='body'>
+  <swiper
+    indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+    interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+    <block wx:for="{{imgs}}" wx:key="*this">
+      <swiper-item>
+        <view class="swiper-item">
+          <image class='swiper-img' src='{{item.url}}'></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='global-menus'>
+     <block wx:for="{{menus}}" wx:key="*this" class='menu-wrapper'>
+        <navigator url='{{item.url}}' class='menu-wrapper-li'>
+            <image src='{{item.img}}'  class='menu-warpper-li-image'></image>
+            <view class='menu-warpper-li-title'>{{item.title}}</view>
+        </navigator>
+     </block>
+  </view>
+  <view class='title-bar'>
+    <view class='title-bar-title'>最新动态</view>
+    <view class='cb'></view>
+  </view>
+  <view class='news-wrapper'>
+    <block wx:for="{{news}}" wx:key="*this">
+      <view class='news-li'>
+        <image class='news-image' src='{{server+"/storage/"+item.image}}'></image>
+        <view class='news-box'>
+          <view class='news-title'>{{item.title}}</view>
+          <view class='news-info'>{{item.view_num}}浏览    {{item.comment_num}}评论</view>
+          <view class='news-created_at'>{{item.createdTime}}</view>
+        </view>
+      </view>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class='more-div'>
+      更多动态
   </view>
 </view>

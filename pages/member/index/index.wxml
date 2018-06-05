@@ -1,0 +1,11 @@
+<view class='mine-header'>
+  <view class='mine-header-content'>
+  <image class='mine-header-content-avatar' src='{{avatar}}' mode="widthFix"></image>
+  <view class='mine-header-content-name'>{{name}}</view>
+  </view>
+</view>
+<view class='tableview'>
+  <block wx:for="{{menus}}" wx:for-item="name">
+  
+  </block>
+</view>

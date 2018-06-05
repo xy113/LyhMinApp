@@ -1,12 +1,48 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/member/index/index",
+    "pages/forum/index/index",
+    "pages/forum/list/list"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2e3551",
+    "navigationBarTitleText": "盘州市大学生联谊会",
+    "navigationBarTextStyle": "whhite",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#6CCF7F",
+    "backgroundColor": "#2e3551",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "asset/img/mobile/home.png",
+        "selectedIconPath": "asset/img/mobile/home-selected.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "近期活动",
+        "iconPath": "asset/img/mobile/cz.png",
+        "selectedIconPath": "asset/img/mobile/cz-selected.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "交流",
+        "iconPath": "asset/img/mobile/jl.png",
+        "selectedIconPath": "asset/img/mobile/jl-selected.png"
+      },
+      {
+        "pagePath": "pages/member/index/index",
+        "text": "我的",
+        "iconPath": "asset/img/mobile/mine.png",
+        "selectedIconPath": "asset/img/mobile/mine-selected.png"
+      }
+    ]
+  },
+  "debug": true
 }

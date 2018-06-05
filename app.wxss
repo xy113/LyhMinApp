@@ -1,4 +1,5 @@
 /**app.wxss**/
+/* @import './asset/css/iconfont/iconfont.css'; */
 .container {
   height: 100%;
   display: flex;
@@ -8,3 +9,31 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+view{
+  box-sizing: border-box;
+}
+.title-bar{
+    display: block;
+     padding: 16rpx; 
+    box-sizing: border-box;
+    font-size: 26rpx;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: #5b637d;
+}
+.title-bar-title{
+    background-color: #2ab27b;
+    margin-top: 14rpx; 
+    padding: 5px 10px;
+    border-radius: 15px 0;
+    float: left;
+}
+.cb{
+  clear:both;
+}
+.body{
+  font-size: 16px; 
+  background-color: #394263; 
+  color: #ffffff;
+}

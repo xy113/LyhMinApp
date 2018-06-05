@@ -1,0 +1,58 @@
+/* pages/member/index/index.wxss */
+.mine-header{
+    background-image: url("https://lyh.songdewei.com/images/mobile/head-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    padding-top: 50%;
+    position: relative;
+    display: block;
+}
+
+.mine-header-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+.mine-header-content-avatar{
+    /* height: 33.33%; */
+    width: 20%; 
+    border-radius: 50%;
+    border: 5px #FFF solid;
+    margin: 9% auto 15px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.tableview {
+    display: block;
+    background-color: #394263;
+}
+
+.mine-header-content-name{
+    background-color: rgba(55, 55, 55, 0.6);
+    border-radius: 50px;
+    padding: 3px 20px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.mine-header-content-signname{
+    background-color: rgba(55, 55, 55, 0.6);
+    border-radius: 50px;
+    padding: 3px 20px;
+    font-size: 14px;
+    color: #394263;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+}

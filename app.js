@@ -34,6 +34,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    servers:'https://lyh.songdewei.com'
   }
 })
