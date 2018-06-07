@@ -5,22 +5,50 @@
 
 .post-item{
     display: flex;
+    flex-direction: row;
     padding: 10px;
-    border-bottom: 0.5px #666 solid
+    border-bottom: 0.5px #666 solid;
 }
 
 .post-image{
     width: 100px;
     height: 80px;
     margin-right: 10px;
+    border-radius: 2px;
 }
 
 .post-content{
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .post-title{
-    font-size: 16px;
-    color: #fff;
-    line-height: 1.2;
+    flex: 1;
+    display: block;
+}
+
+.post-title-text{
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.post-data{
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  max-height: 20px;
+}
+
+.post-comments{
+  color: #ccc;
+  font-size: 12px;
+  flex: 1;
+}
+
+.post-time{
+  color: #ccc;
+  font-size: 12px;
+  text-align: right;
 }

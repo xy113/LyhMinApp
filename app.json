@@ -5,7 +5,8 @@
     "pages/member/index/index",
     "pages/forum/index/index",
     "pages/forum/list/list",
-    "pages/post/detail/detail"
+    "pages/post/detail/detail",
+    "pages/post/list/list"
   ],
   "window": {
     "backgroundTextStyle": "dark",

@@ -1,0 +1,6 @@
+<!--pages/post/list/list.wxml-->
+<view style='background-color:#2E3551'>
+  <PostItemList
+    data="{{items}}"
+  />
+</view>

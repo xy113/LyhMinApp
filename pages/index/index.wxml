@@ -17,9 +17,10 @@
   <PostItemList
     id="postItemList"
     data="{{news}}"
-  />
-  <view class='more-div'>
-    更多动态
-  </view>
-  
+  ></PostItemList>
+  <navigator url='../post/list/list'>
+    <view class='more-div'>
+      更多动态
+    </view>
+  </navigator>
 </view>

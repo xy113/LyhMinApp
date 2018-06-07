@@ -1,11 +1,17 @@
 <!--components/post/itemlist/itemlist.wxml-->
 <view class="post-list">
-  <block wx:for="{{data}}" wx:for-index="index" wx:for-item="item">
+  <block wx:for="{{data}}" wx:for-index="index" wx:for-item="item" wx:key="{{item.aid}}">
   <navigator url='/pages/post/detail/detail?aid={{item.aid}}'>
     <view class="post-item">
       <image src='{{item.image}}' class="post-image"></image>
       <view class='post-content'>
-        <text class="post-title">{{item.title}}</text>
+        <view class='post-title'>
+          <text class="post-title-text">{{item.title}}</text>
+        </view>
+        <view class="post-data">
+            <text class="post-comments">{{item.comment_num}}评论 {{item.view_num}}浏览</text>
+            <text class="post-time">{{item.formatted_time}}</text>
+        </view>
       </view>
     </view>
   </navigator>

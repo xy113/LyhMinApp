@@ -1,0 +1,7 @@
+{
+  "usingComponents":{
+    "PostItemList":"/components/post/itemlist/itemlist"
+  },
+  "backgroundColor":"#2E3551",
+  "enablePullDownRefresh":true
+}

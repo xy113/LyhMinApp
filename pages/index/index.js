@@ -61,7 +61,6 @@ Page({
     onLoad: function () {
         self = this;
         Util.request('/block/batchget_item', {block_id:10}).then(response => {
-            console.log(response);
             this.setData({
                 imgs:response.data.items
             });

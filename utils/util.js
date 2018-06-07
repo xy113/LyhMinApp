@@ -15,6 +15,7 @@ const formatNumber = n => {
 };
 
 const request = (path, data = {}, method = "GET") => {
+    const token = wx.getStorageSync('token');
     return new Promise((resolve, reject) => {
         wx.request({
             url: 'https://lyh.songdewei.com/minapp'+path,
@@ -22,7 +23,7 @@ const request = (path, data = {}, method = "GET") => {
             method: method,
             header: {
                 'Content-Type': 'application/json',
-                'X-Token': wx.getStorageSync('token')
+                'X-Token': token
             },
             success: (res) => {
                 if (res.statusCode === 200) {
