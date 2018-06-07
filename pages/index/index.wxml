@@ -5,7 +5,7 @@
     <block wx:for="{{imgs}}" wx:key="*this">
       <swiper-item>
         <view class="swiper-item">
-          <image class='swiper-img' src='{{item.url}}'></image>
+          <image class='swiper-img' src='{{item.image}}'></image>
         </view>
       </swiper-item>
     </block>
@@ -25,11 +25,11 @@
   <view class='news-wrapper'>
     <block wx:for="{{news}}" wx:key="*this">
       <view class='news-li'>
-        <image class='news-image' src='{{server+"/storage/"+item.image}}'></image>
+        <image class='news-image' src='{{item.image}}'></image>
         <view class='news-box'>
           <view class='news-title'>{{item.title}}</view>
           <view class='news-info'>{{item.view_num}}浏览    {{item.comment_num}}评论</view>
-          <view class='news-created_at'>{{item.createdTime}}</view>
+          <view class='news-created_at'>{{item.formatted_time}}</view>
         </view>
       </view>
     </block>
