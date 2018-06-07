@@ -120,10 +120,15 @@ const getUserInfo = () => {
     });
 };
 
+const getPostUrl = (aid) => {
+    return 'https://lyh.songdewei.com/mobile/post/detail/'+aid+'.html';
+};
+
 module.exports = {
     formatTime,
     request,
     checkSession,
     login,
-    getUserInfo
+    getUserInfo,
+    getPostUrl
 };

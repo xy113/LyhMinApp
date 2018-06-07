@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "PostItemList":"/components/post/itemlist/itemlist",
+    "SwiperView": "/components/common/swiper/SwiperView"
+  }
+}

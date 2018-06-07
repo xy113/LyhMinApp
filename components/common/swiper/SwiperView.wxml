@@ -1,0 +1,23 @@
+<!--components/common/swiper/SwiperView.wxml-->
+<swiper
+  style='height:{{height}}'
+  indicator-dots="{{indicator-dots}}"
+  indicator-color="{{indicator-color}}"
+  indicator-active-color="{{indicator-active-color}}"
+  autoplay="{{autoplay}}"
+  current="{{current}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+  circular="{{circular}}"
+  vertical="{{vertical}}"
+  display-multiple-items="{{display-multiple-items}}"
+  bindchange="{{bindchange}}"
+  bindanimationfinish="{{bindanimationfinish}}"
+  class='swiper'
+>
+    <block wx:for="{{data}}" wx:for-index="index" wx:for-item="item" wx:key="*this">
+      <swiper-item class="slide-item">
+        <image class='slide-image' src='{{item.image}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>

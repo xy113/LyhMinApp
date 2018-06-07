@@ -101,4 +101,5 @@ Page({
             duration: e.detail.value
         })
     },
+    
 });

@@ -1,0 +1,13 @@
+<!--components/post/itemlist/itemlist.wxml-->
+<view class="post-list">
+  <block wx:for="{{data}}" wx:for-index="index" wx:for-item="item">
+  <navigator url='/pages/post/detail/detail?aid={{item.aid}}'>
+    <view class="post-item">
+      <image src='{{item.image}}' class="post-image"></image>
+      <view class='post-content'>
+        <text class="post-title">{{item.title}}</text>
+      </view>
+    </view>
+  </navigator>
+  </block>
+</view>

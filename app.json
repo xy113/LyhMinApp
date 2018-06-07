@@ -1,12 +1,13 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/member/index/index",
     "pages/forum/index/index",
-    "pages/forum/list/list"
+    "pages/forum/list/list",
+    "pages/post/detail/detail"
   ],
-  "window":{
+  "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#2e3551",
     "navigationBarTitleText": "盘州市大学生联谊会",
