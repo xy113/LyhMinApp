@@ -69,7 +69,7 @@ Page({
         Util.request('/post/batchget_item', {count:10}).then(response => {
             let news = response.data.items;
             news.forEach((item) => {
-                item.formatted_time = moment(new Date(new Date(item.created_at * 1000))).format('MM-DD')
+                item.formatted_time = moment(new Date(item.created_at * 1000)).format('MM-DD')
             });
             this.setData({news});
         });

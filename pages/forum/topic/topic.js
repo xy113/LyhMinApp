@@ -91,7 +91,7 @@ Page({
             count:20,
         }).then(response => {
             response.data.items.forEach((item) => {
-                item.formatted_time = moment(new Date(new Date(item.created_at * 1000)))
+                item.formatted_time = moment(new Date(item.created_at * 1000))
                     .format('YYYY-MM-DD');
             });
             let items = self.data.items;

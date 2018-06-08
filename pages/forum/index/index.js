@@ -33,7 +33,7 @@ Page({
         Util.request('/forum/batchget_topic', {count:10}).then(response => {
             const topics = response.data.items;
             topics.forEach((topic) => {
-                topic.formatted_time = moment(new Date(new Date(topic.created_at * 1000))).format('MM-DD hh:mm');
+                topic.formatted_time = moment(new Date(topic.created_at * 1000)).format('MM-DD hh:mm');
             });
             this.setData({topics});
         });
