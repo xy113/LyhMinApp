@@ -3,7 +3,7 @@
     data="{{imgs}}"
   />
   <view class='global-menus'>
-    <block wx:for="{{menus}}" wx:key="*this" class='menu-wrapper'>
+    <block wx:for="{{menus}}" wx:for-index="index" wx:key="{{index}}" class='menu-wrapper'>
       <navigator url='{{item.url}}' class='menu-wrapper-li'>
         <image src='{{item.img}}'  class='menu-warpper-li-image'></image>
         <view class='menu-warpper-li-title'>{{item.title}}</view>

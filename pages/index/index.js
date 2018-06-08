@@ -19,27 +19,27 @@ Page({
             {
                 title: '盘联新闻',
                 img: '../../asset/img/mobile/news.png',
-                url: '../index/index'
+                url: '../post/list/list?catid=15&title=盘联新闻'
             },
             {
                 title: '部门招新',
                 img: '../../asset/img/mobile/zhaoxin.png',
-                url: '../index/index'
+                url: '../recruit/list/list?catid=1'
             },
             {
                 title: '活动招募',
                 img: '../../asset/img/mobile/zhaomu.png',
-                url: '../index/index'
+                url: '../recruit/list/list?catid=2'
             },
             {
                 title: '工作机会',
                 img: '../../asset/img/mobile/zhaopin.png',
-                url: '../index/index'
+                url: '../jobs/jobs/jobs'
             },
             {
                 title: '加入联谊会',
                 img: '../../asset/img/mobile/jiaru.png',
-                url: '../index/index'
+                url: '../join/lisence/lisence'
             },
             {
                 title: '联谊会达人',
@@ -49,12 +49,12 @@ Page({
             {
                 title: '合作伙伴',
                 img: '../../asset/img/mobile/hezuo.png',
-                url: '../index/index'
+                url: '../company/list/list'
             },
             {
                 title: '组织架构',
                 img: '../../asset/img/mobile/zuzhi.png',
-                url: '../index/index'
+                url: '../pages/detail/detail?pageid=51'
             }
         ]
     },

@@ -1,0 +1,57 @@
+/* components/forum/TopicList/TopicList.wxss */
+
+.topic-list{
+    display: block;
+}
+
+.topic-item{
+    padding: 15px;
+    border-bottom: 1px #5B637D solid;
+}
+
+.topic-user{
+    display: flex;
+    align-self: center;
+}
+
+.topic-user-avatar{
+    width: 26px;
+    height: 26px;
+    border-radius: 15px;
+    display: block;
+    margin-right: 8px;
+    border: 2px #fff solid;
+}
+
+.topic-user-name{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #ccc;
+    padding-top: 2px;
+    box-sizing: border-box;
+}
+
+.topic-title{
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.topic-data{
+    display: flex;
+    line-height: 1;
+}
+
+.topic-data-text{
+    color: #ccc;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.topic-data-time{
+    color: #ccc;
+    font-size: 12px;
+    text-align: right;
+    flex: 1;
+}

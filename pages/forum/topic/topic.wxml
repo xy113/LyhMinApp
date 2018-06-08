@@ -1,0 +1,47 @@
+<!--pages/forum/topic/topic.wxml-->
+<view class="container">
+    <view class="topic">
+        <view class="topic-title"><text>{{topic.title}}</text></view>
+        <view class="topic-data">
+            <image src="{{topic.avatar}}" class="topic-user-avatar"></image>
+            <view class="topic-user">
+                <view class="topic-user-name">{{topic.username}}</view>
+                <view class="topic-stat">
+                    <text class="topic-stat-text">{{topic.views}}浏览</text>
+                    <text class="topic-stat-text">{{topic.replies}}回复</text>
+                </view>
+            </view>
+        </view>
+        <view class="topic-content">{{message.message}}</view>
+    </view>
+    <view class='title-bar'>
+        <view class='title-bar-title'>最新回复</view>
+        <view class='cb'></view>
+    </view>
+    <view class="messages">
+        <block wx:for="{{items}}" wx:for-index="index" wx:for-item="item" wx:key="{{item.id}}">
+            <view class="message-item">
+                <view class="message-user">
+                    <image class="message-avatar" src="{{item.avatar}}"></image>
+                    <text class="message-username">{{item.username}}</text>
+                </view>
+                <view class="message-content"><text>{{item.message}}</text></view>
+                <view class="message-time">{{item.formatted_time}}</view>
+            </view>
+        </block>
+    </view>
+    <view class='title-bar'>
+        <view class='title-bar-title'>发表回复</view>
+        <view class='cb'></view>
+    </view>
+    <view class="reply-form">
+        <form>
+            <view class="reply-form-group">
+                <textarea class="reply-form-textarea" placeholder="填写回复内容，至少5个字"></textarea>
+            </view>
+            <view class="reply-form-group">
+                <button class="reply-form-button">回复</button>
+            </view>
+        </form>
+    </view>
+</view>

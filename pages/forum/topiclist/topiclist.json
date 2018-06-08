@@ -1,6 +1,5 @@
 {
   "usingComponents": {
-    "SwiperView": "/components/common/swiper/SwiperView",
     "TopicList":"/components/forum/TopicList/TopicList"
   }
 }

@@ -1,0 +1,39 @@
+<!--pages/company/detail/detail.wxml-->
+<view class="container">
+    <view class="company-detail">
+        <view class="company-name">{{company.company_name}}}</view>
+        <view class="company-info">
+            <view class="company-info-item">
+                <text class="label">联 系 人</text>
+                <text class="text">{{company.contact}}</text>
+            </view>
+            <view class="company-info-item">
+                <text class="label">联系电话</text>
+                <text class="text">{{company.tel}}</text>
+            </view>
+            <view class="company-info-item">
+                <text class="label">电子邮箱</text>
+                <text class="text">{{company.email}}</text>
+            </view>
+            <view class="company-info-item">
+                <text class="label">所 在 地</text>
+                <text class="text">{{company.province}}{{company.city}}{{company.district}}</text>
+            </view>
+        </view>
+        <view class="company-content"><text>{{content.content}}</text></view>
+        <view class='title-bar'>
+            <view class='title-bar-title'>在聘职位</view>
+            <view class='cb'></view>
+        </view>
+        <view class="job-list">
+            <block wx:for="{{jobs}}" wx:for-index="index" wx:for-item="item" wx:key="{{index}}">
+                <navigator url='../../jobs/detail/detail?job_id={{item.job_id}}'>
+                  <view class="job-item">
+                    <text class="job-title">{{item.title}}</text>
+                    <text class="job-salary">{{item.salary}}</text>
+                  </view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+</view>

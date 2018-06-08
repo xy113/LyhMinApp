@@ -1,0 +1,22 @@
+<!--pages/jobs/jobs/jobs.wxml-->
+<view class="container">
+    <view class="job-list">
+        <block wx:for="{{items}}" wx:for-index="index" wx:for-item="item" wx:key="{{item.job_id}}">
+            <navigator url='../detail/detail?job_id={{item.job_id}}'>
+              <view class="job-item">
+                <image src="{{item.company_logo}}" class="company-logo"></image>
+                <view class="job-content">
+                    <view class="job-title-wrap">
+                        <text class="job-title">{{item.title}}</text>
+                        <text class="company-name">{{item.company_name}}</text>
+                    </view>
+                    <view class="job-data">
+                        <text class="job-location">{{item.province}} {{item.city}}</text>
+                        <text class="job-time">{{item.formatted_time}}</text>
+                    </view>
+                </view>
+              </view>
+            </navigator>
+        </block>
+    </view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/join/lisence/lisence.wxml-->
+<view class='container'>
+  <view class='lisence'>
+    <text>{{lisence}}</text>
+  </view>
+  <view class='button-container'>
+    <text class="button">同意并加入</text>
+  </view>
+</view>
+

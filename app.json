@@ -4,16 +4,27 @@
     "pages/logs/logs",
     "pages/member/index/index",
     "pages/forum/index/index",
-    "pages/forum/list/list",
     "pages/post/detail/detail",
-    "pages/post/list/list"
+    "pages/post/list/list",
+    "pages/post/activity/activity",
+    "pages/join/lisence/lisence",
+    "pages/jobs/jobs/jobs",
+    "pages/jobs/detail/detail",
+    "pages/company/list/list",
+    "pages/company/detail/detail",
+    "pages/recruit/list/list",
+    "pages/recruit/detail/detail",
+    "pages/pages/detail/detail",
+    "pages/forum/topiclist/topiclist",
+    "pages/forum/topic/topic"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#2e3551",
     "navigationBarTitleText": "盘州市大学生联谊会",
     "navigationBarTextStyle": "whhite",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#2E3551"
   },
   "tabBar": {
     "color": "#ffffff",
@@ -27,13 +38,13 @@
         "selectedIconPath": "asset/img/mobile/home-selected.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/post/activity/activity",
         "text": "近期活动",
         "iconPath": "asset/img/mobile/cz.png",
         "selectedIconPath": "asset/img/mobile/cz-selected.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/forum/index/index",
         "text": "交流",
         "iconPath": "asset/img/mobile/jl.png",
         "selectedIconPath": "asset/img/mobile/jl-selected.png"

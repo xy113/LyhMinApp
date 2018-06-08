@@ -1,16 +1,16 @@
 <!--components/common/swiper/SwiperView.wxml-->
 <swiper
   style='height:{{height}}'
-  indicator-dots="{{indicator-dots}}"
-  indicator-color="{{indicator-color}}"
-  indicator-active-color="{{indicator-active-color}}"
+  indicator-dots="{{indicatorDots}}"
+  indicator-color="{{indicatorColor}}"
+  indicator-active-color="{{indicatorActiveColor}}"
   autoplay="{{autoplay}}"
   current="{{current}}"
   interval="{{interval}}"
   duration="{{duration}}"
   circular="{{circular}}"
   vertical="{{vertical}}"
-  display-multiple-items="{{display-multiple-items}}"
+  display-multiple-items="{{displayMultipleItems}}"
   bindchange="{{bindchange}}"
   bindanimationfinish="{{bindanimationfinish}}"
   class='swiper'

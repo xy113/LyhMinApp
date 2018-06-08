@@ -1,18 +1,26 @@
-// pages/forum/list/list.js
+// pages/join/lisence/lisence.js
+const Util = require('../../../utils/util');
+
+let self;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+      lisence:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+      self = this;
+      Util.request('/settings/get',{name:'membership_desc'}).then(response=>{
+          self.setData({
+              lisence:response.data.membership_desc
+          });
+      });
   },
 
   /**

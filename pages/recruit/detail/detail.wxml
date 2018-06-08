@@ -1,0 +1,15 @@
+<!--pages/recruit/detail/detail.wxml-->
+<view class="container">
+    <view class="recruit-detail">
+        <view class="recruit-title"><text>{{recruit.title}}</text></view>
+        <view class="recruit-data">
+            <text class="recruit-num">招募人数{{recruit.num}}</text>
+            <text class="recruit-num">报名人数{{recruit.enrolment}}</text>
+            <text class="recruit-time">{{recruit.formatted_time}}</text>
+        </view>
+        <view class="recruit-image-wrap">
+            <image src="{{recruit.image}}" mode="widthFix"></image>
+        </view>
+        <view class="recruit-content"><text>{{recruit.content}}</text></view>
+    </view>
+</view>

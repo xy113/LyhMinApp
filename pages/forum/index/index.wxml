@@ -1,1 +1,23 @@
-<view>forum index</view>
+<view class="container">
+    <SwiperView
+       data="{{focus_imgs}}"
+    ></SwiperView>
+
+    <view class="menus">
+        <block wx:for="{{boards}}" wx:for-index="index" wx:for-item="board" wx:key="{{board.boardid}}">
+            <view class="menu-item">
+                <navigator url='../topiclist/topiclist?boardid={{board.boardid}}'>
+                  <view class="menu-icon">
+                      <image class="menu-icon-img" src="{{board.icon}}"></image>
+                  </view>
+                  <view class="menu-title"><text>{{board.title}}</text></view>
+                  </navigator>
+              </view>
+        </block>
+    </view>
+    <view class='title-bar'>
+        <view class='title-bar-title'>最新话题</view>
+        <view class='cb'></view>
+    </view>
+    <TopicList data="{{topics}}"></TopicList>
+</view>

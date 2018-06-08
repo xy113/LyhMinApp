@@ -1,0 +1,21 @@
+<!--pages/recruit/list/list.wxml-->
+<view class="container">
+    <view class="recruit-list">
+        <block wx:for="{{items}}" wx:for-index="index" wx:for-item="item" wx:key="{{item.id}}">
+            <navigator url='../detail/detail?id={{item.id}}'>
+              <view class="recruit-item">
+                <view class="recruit-image-wrap">
+                    <image src="{{item.image}}" 
+                    class="recruit-image" style="height: {{imgHeight}}px" mode='aspectFill'></image>
+                </view>
+                <view class="recruit-title"><text>{{item.title}}</text></view>
+                <view class="recruit-data">
+                    <text class="recruit-num">招募人数:{{item.num}}</text>
+                    <text class="recruit-num">报名人数:{{item.enrolment}}</text>
+                    <text class="recruit-time">{{item.formatted_time}}</text>
+                </view>
+              </view>
+            </navigator>
+        </block>
+    </view>
+</view>

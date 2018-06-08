@@ -4,23 +4,23 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    data:{
+    "data":{
       type:Array,
       value:[]
     },
-    height:{
+    "height":{
       type:String,
       value:wx.getSystemInfoSync().screenWidth * 0.5+'px'
     },
-    "indicator-dots":{
+    "indicatorDots":{
       type:Boolean,
       value:true
     },
-    "indicator-color": {
+    "indicatorColor": {
       type: String,
       value: "#fff"
     },
-    "indicator-active-color": {
+    "indicatorActiveColor": {
       type: String,
       value: "#f00"
     },
@@ -48,7 +48,7 @@ Component({
       type: Boolean,
       value: false
     },
-    "display-multiple-items": {
+    "displayMultipleItems": {
       type: Number,
       value: 1
     },

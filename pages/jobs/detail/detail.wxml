@@ -1,0 +1,38 @@
+<!--pages/jobs/detail/detail.wxml-->
+<view class="container">
+    <view class="job-detail">
+        <view class="job-title">
+            <text>{{job.title}}</text>
+        </view>
+        <view class="job-data">
+            <text class="job-salary">薪资范围:{{job.salary}}</text>
+            <text class="job-time">{{job.created_at}}</text>
+        </view>
+        <view class="job-welfare">
+            <block wx:for="{{job.welfare}}" wx:for-index="index" wx:for-item="item" wx:key="{{index}}">
+                <text class="job-welfare-item">{{item}}</text>
+            </block>
+        </view>
+        <view class="section-title"><text>职位描述</text></view>
+        <view class="job-desc"><text>{{job.description}}</text></view>
+        <view class="section-title"><text>企业信息</text></view>
+        <view class="company-info">
+            <view class="company-info-row">
+                <text class="label">公司名称</text>
+                <text class="text">{{company.company_name}}</text>
+            </view>
+            <view class="company-info-row">
+                <text class="label">联系人</text>
+                <text class="text">{{company.contact}}</text>
+            </view>
+            <view class="company-info-row">
+                <text class="label">联系电话</text>
+                <text class="text">{{company.tel}}</text>
+            </view>
+            <view class="company-info-row">
+                <text class="label">所在地</text>
+                <text class="text">{{company.province}}{{company.city}}{{company.district}}</text>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,47 @@
+/* pages/recruit/detail/detail.wxss */
+
+.recruit-detail{
+    display: block;
+    padding: 20px 15px;
+}
+
+.recruit-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.recruit-data{
+    padding: 15px 0;
+    border-bottom: 1px #999 solid;
+    display: flex;
+}
+
+.recruit-num {
+    color: #ccc;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.recruit-time {
+    color: #ccc;
+    font-size: 12px;
+    text-align: right;
+    flex: 1;
+}
+
+.recruit-image-wrap{
+    margin: 15px 0;
+}
+
+.recruit-image{
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    display: block;
+}
+
+.recruit-content{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
+}

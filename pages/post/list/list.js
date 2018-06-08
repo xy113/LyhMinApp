@@ -1,6 +1,7 @@
 // pages/post/list/list.js
 
 const Util = require('../../../utils/util');
+const moment = require('../../../utils/moment.min.js');
 
 let self;
 Page({
@@ -23,6 +24,11 @@ Page({
       this.offset = 0;
       self.loadMoreAble = false;
       this.fetchData();
+
+      let title = options.title || '盘联新闻';
+      wx.setNavigationBarTitle({
+        title: title,
+      });
     },
 
     /**
@@ -90,11 +96,14 @@ Page({
     fetchData: () => {
       const {catid, offset} = self;
       Util.request('/post/batchget_item', {
+          catid,
           offset,
           count:20,
-          catid,
       }).then(response => {
-          console.log(response);
+          response.data.items.forEach((item) => {
+            item.formatted_time = moment(new Date(new Date(item.created_at * 1000)))
+              .format('YYYY-MM-DD');
+          });
           let items = self.data.items;
           if (self.data.isLoadMore) {
             items = items.concat(response.data.items);

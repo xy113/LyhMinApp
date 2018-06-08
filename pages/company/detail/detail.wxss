@@ -1,0 +1,61 @@
+/* pages/company/detail/detail.wxss */
+.company-detail{
+    padding: 20px;
+}
+
+.company-name{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.company-info{
+    display: block;
+    margin: 20px 0;
+}
+
+.company-info-item{
+    display: flex;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.company-info-item .label{
+    width: 66px;
+    margin-right: 10px;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.company-info-item .text{
+    flex: 1;
+}
+
+.company-content{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.job-list{
+    display: block;
+    margin: 20px 0;
+}
+
+.job-item {
+    display: flex;
+    padding: 10px 0;
+}
+
+.job-title{
+    font-size: 16px;
+    flex: 1;
+}
+
+.job-salary{
+    color: #FFFD38;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}

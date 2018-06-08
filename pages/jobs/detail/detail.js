@@ -1,6 +1,5 @@
-// pages/forum/index/index.js
+// pages/jobs/detail/detail.js
 const Util = require('../../../utils/util');
-const moment = require('../../../utils/moment.min');
 
 let self;
 Page({
@@ -9,9 +8,8 @@ Page({
      * 页面的初始数据
      */
     data: {
-        focus_imgs:[],
-        boards:[],
-        topics:[]
+        job:{},
+        company:{}
     },
 
     /**
@@ -19,23 +17,14 @@ Page({
      */
     onLoad: function (options) {
         self = this;
+        const job_id = options.job_id;
 
-        Util.request('/block/batchget_item',{block_id:12}).then(response => {
-            const focus_imgs = response.data.items;
-            this.setData({focus_imgs});
-        });
-
-        Util.request('/forum/batchget_board').then(response => {
-            const boards = response.data.items;
-            this.setData({boards});
-        });
-
-        Util.request('/forum/batchget_topic', {count:10}).then(response => {
-            const topics = response.data.items;
-            topics.forEach((topic) => {
-                topic.formatted_time = moment(new Date(new Date(topic.created_at * 1000))).format('MM-DD hh:mm');
+        Util.request('/job/get_job',{job_id}).then(response=>{
+            const {job,company} = response.data;
+            this.setData({job,company});
+            wx.setNavigationBarTitle({
+              title: job.title,
             });
-            this.setData({topics});
         });
     },
 

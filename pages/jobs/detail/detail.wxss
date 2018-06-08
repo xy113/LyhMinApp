@@ -1,0 +1,73 @@
+/* pages/jobs/detail/detail.wxss */
+.job-detail{
+    padding: 20px;
+}
+
+.job-title{
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+
+.job-data{
+    display: flex;
+    margin-top: 10px;
+}
+
+.job-salary{
+    color: #FFFD38;
+    font-weight: bold;
+    font-size: 16px;
+    flex: 1;
+}
+
+.job-time{
+    font-size: 12px;
+    padding-top: 4px;
+}
+
+.job-welfare{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.job-welfare-item{
+    padding: 5px 10px;
+    border: 1px #fff solid;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.section-title{
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.job-desc{
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+.company-info{
+    display: block;
+}
+
+.company-info-row{
+    display: flex;
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.company-info-row .label{
+    width: 80px;
+}
+
+.company-info-row .text{
+    flex: 1;
+}

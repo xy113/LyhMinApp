@@ -1,0 +1,20 @@
+<!--pages/forum/topiclist/topiclist.wxml-->
+<view class="container">
+    <view class="board">
+        <view class="board-icon">
+            <image class="board-icon-img" src="{{board.icon}}"></image>
+        </view>
+        <view class="board-content">
+            <view class="board-name">{{board.title}}</view>
+            <view class="board-data">
+                <text class="board-data-text">{{board.topics}}话题</text>
+                <text class="board-data-text">{{board.replies}}回复</text>
+            </view>
+        </view>
+    </view>
+    <view class="tabs">
+        <view class="tab-item{{activeTabIndex == 0 ? ' tab-active' : ''}}" data-index="0" bindtap='onSwitchTab'><text>最新发表</text></view>
+        <view class="tab-item{{activeTabIndex == 1 ? ' tab-active' : ''}}" data-index="1" bindtap='onSwitchTab'><text>热门话题</text></view>
+    </view>
+    <TopicList data="{{items}}"></TopicList>
+</view>

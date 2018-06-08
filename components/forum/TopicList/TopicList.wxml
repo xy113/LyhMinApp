@@ -1,0 +1,19 @@
+<!--components/forum/TopicList/TopicList.wxml-->
+<view class="topic-list">
+    <block wx:for="{{data}}" wx:for-index="index" wx:for-item="item" wx:key="{{item.tid}}">
+        <navigator url="/pages/forum/topic/topic?tid={{item.tid}}">
+            <view class="topic-item">
+                <view class="topic-user">
+                    <image src="{{item.avatar}}" class="topic-user-avatar"></image>
+                    <text class="topic-user-name">{{item.username}}</text>
+                </view>
+                <view class="topic-title"><text>{{item.title}}</text></view>
+                <view class="topic-data">
+                    <text class="topic-data-text">{{item.replies}}回复</text>
+                    <text class="topic-data-text">{{item.views}}浏览</text>
+                    <text class="topic-data-time">{{item.formatted_time}}</text>
+                </view>
+            </view>
+        </navigator>
+    </block>
+</view>

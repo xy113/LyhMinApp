@@ -1,0 +1,21 @@
+<!--pages/post/activity/activity.wxml-->
+<view class='contaner'>
+  <view class="post-list">
+  <block wx:for="{{items}}" wx:for-index="index" wx:for-item="item" wx:key="{{item.aid}}">
+  <navigator url='/pages/post/detail/detail?aid={{item.aid}}'>
+    <view class="post-item">
+      <view class='post-content'>
+        <view class='post-title'>
+          <text class="post-title-text">{{item.title}}</text>
+        </view>
+        <view class="post-data">
+            <text class="post-comments">{{item.comment_num}}评论 {{item.view_num}}浏览</text>
+            <text class="post-time">{{item.formatted_time}}</text>
+        </view>
+      </view>
+      <image src='{{item.image}}' class="post-image"></image>
+    </view>
+  </navigator>
+  </block>
+</view>
+</view>

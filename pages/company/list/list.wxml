@@ -1,0 +1,18 @@
+<!--pages/company/list/list.wxml-->
+<view class="container">
+    <view class="company-list">
+        <block wx:for="{{items}}" wx:for-index="index" wx:for-item="item" wx:key="{{item.company_id}}">
+            <navigator url='../detail/detail?company_id={{item.company_id}}'>
+                <view class="company-item">
+                    <image src="{{item.company_logo}}" class="company-logo"></image>
+                    <view class="company-content">
+                        <view class="company-name-wrap">
+                            <text class="company-name">{{item.company_name}}</text>
+                            <text class="company-location">{{item.province}} {{item.city}}</text>
+                        </view>
+                    </view>
+                </view>
+            </navigator>
+        </block>
+    </view>
+</view>

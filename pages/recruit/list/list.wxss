@@ -1,0 +1,44 @@
+/* pages/recruit/list/list.wxss */
+
+.recruit-list{
+    display: block;
+    padding: 10px;
+}
+
+.recruit-item{
+    padding: 15px 0;
+    border-bottom: 1px #ccc solid;
+}
+
+.recruit-image-wrap{
+    display: block;
+    position: relative;
+}
+
+.recruit-image{
+    display: block;
+    width: 100%;
+}
+
+.recruit-title{
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.recruit-data{
+    display: flex;
+}
+
+.recruit-num{
+    font-size: 12px;
+    color: #ccc;
+    margin-right: 10px;
+}
+
+.recruit-time{
+    color: #ccc;
+    font-size: 12px;
+    text-align: right;
+    flex: 1;
+}

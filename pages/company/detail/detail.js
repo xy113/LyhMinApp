@@ -1,6 +1,5 @@
-// pages/forum/index/index.js
+// pages/company/detail/detail.js
 const Util = require('../../../utils/util');
-const moment = require('../../../utils/moment.min');
 
 let self;
 Page({
@@ -9,9 +8,9 @@ Page({
      * 页面的初始数据
      */
     data: {
-        focus_imgs:[],
-        boards:[],
-        topics:[]
+        company:{},
+        content:{},
+        jobs:[]
     },
 
     /**
@@ -19,23 +18,18 @@ Page({
      */
     onLoad: function (options) {
         self = this;
-
-        Util.request('/block/batchget_item',{block_id:12}).then(response => {
-            const focus_imgs = response.data.items;
-            this.setData({focus_imgs});
+        const company_id = options.company_id;
+        wx.setNavigationBarTitle({
+            title: '公司介绍',
+        });
+        Util.request('/company/get_company',{company_id}).then(response=>{
+            const {company, content} = response.data;
+            this.setData({company, content});
         });
 
-        Util.request('/forum/batchget_board').then(response => {
-            const boards = response.data.items;
-            this.setData({boards});
-        });
-
-        Util.request('/forum/batchget_topic', {count:10}).then(response => {
-            const topics = response.data.items;
-            topics.forEach((topic) => {
-                topic.formatted_time = moment(new Date(new Date(topic.created_at * 1000))).format('MM-DD hh:mm');
-            });
-            this.setData({topics});
+        Util.request('/job/batchget_job', {company_id}).then(response => {
+            const {items} = response.data;
+            this.setData({jobs:items});
         });
     },
 
@@ -87,4 +81,4 @@ Page({
     onShareAppMessage: function () {
 
     }
-});
+})

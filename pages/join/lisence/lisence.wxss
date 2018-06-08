@@ -1,0 +1,20 @@
+/* pages/join/lisence/lisence.wxss */
+.lisence{
+  padding: 15px;
+  color: #fff;
+}
+
+.button-container{
+  padding: 20px 15px;
+}
+
+.button{
+  background-color: #30C6B1;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1;
+  border-radius: 6px;
+  display: block;
+  padding: 15px;
+}

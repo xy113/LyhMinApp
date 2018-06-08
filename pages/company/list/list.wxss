@@ -1,0 +1,42 @@
+/* pages/company/list/list.wxss */
+.company-list{
+    display: block;
+    padding: 0 10px;
+}
+
+.company-item{
+    padding: 10px 0;
+    border-bottom: 1px #999 solid;
+    display: flex;
+}
+
+.company-logo{
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.company-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.company-name-wrap{
+    flex: 1;
+}
+
+.company-name{
+    font-size: 16px;
+    line-height: 1.2;
+    display: block;
+}
+
+.company-location {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 3px;
+    display: block;
+}
