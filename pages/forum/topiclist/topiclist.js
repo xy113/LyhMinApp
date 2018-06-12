@@ -25,7 +25,7 @@ Page({
         this.offset = 0;
         this.orderby = '';
         this.loadMoreAble = false;
-        this.fetchData();
+        //this.fetchData();
 
         if (this.boardid) {
             Util.request('/forum/get_board', {boardid:this.boardid}).then(response=>{
@@ -49,7 +49,8 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function () {
-
+        self.offset = 0;
+        self.fetchData();
     },
 
     /**
@@ -101,7 +102,7 @@ Page({
 
     //请求数据
     fetchData: () => {
-        const {boardid, offset, orderby} = self;
+        let {boardid, offset, orderby} = self;
         Util.request('/forum/batchget_topic', {
             boardid,
             offset,
@@ -123,6 +124,7 @@ Page({
                 isRefreshing:false,
                 isLoadMore:false
             });
+            wx.stopPullDownRefresh();
             self.loadMoreAble = response.data.items.length >= 20;
         });
     },

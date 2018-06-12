@@ -112,6 +112,7 @@ Page({
           isRefreshing: false,
           isLoadMore: false
         });
+        wx.stopPullDownRefresh();
         self.loadMoreAble = response.data.items.length >= 20;
       });
     }

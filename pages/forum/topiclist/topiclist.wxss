@@ -1,5 +1,9 @@
 /* pages/forum/topiclist/topiclist.wxss */
 
+.container{
+    padding-bottom: 60px;
+}
+
 .board{
     padding: 10px;
     display: flex;
@@ -55,4 +59,16 @@
 
 .tab-active{
     color: #1896D0;
+}
+
+.post-topic{
+    background-color: #239F86;
+    padding: 12px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

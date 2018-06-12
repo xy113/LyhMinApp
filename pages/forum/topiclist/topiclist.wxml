@@ -17,4 +17,7 @@
         <view class="tab-item{{activeTabIndex == 1 ? ' tab-active' : ''}}" data-index="1" bindtap='onSwitchTab'><text>热门话题</text></view>
     </view>
     <TopicList data="{{items}}"></TopicList>
+    <navigator url='../newtopic/newtopic?boardid={{board.boardid}}'>
+      <view class="post-topic"><text>发表话题</text></view>
+    </navigator>
 </view>

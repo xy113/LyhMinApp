@@ -35,12 +35,12 @@
         <view class='cb'></view>
     </view>
     <view class="reply-form">
-        <form>
+        <form bindsubmit='formSubmit'>
             <view class="reply-form-group">
-                <textarea class="reply-form-textarea" placeholder="填写回复内容，至少5个字"></textarea>
+                <textarea name="message" class="reply-form-textarea" placeholder="填写回复内容，至少5个字"></textarea>
             </view>
             <view class="reply-form-group">
-                <button class="reply-form-button">回复</button>
+                <button form-type='submit' class="reply-form-button">回复</button>
             </view>
         </form>
     </view>

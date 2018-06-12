@@ -22,7 +22,7 @@ Page({
      */
     onLoad: function (options) {
         self = this;
-
+        this.submiting = false;
         this.tid = options.tid;
         Util.request('/forum/get_topic', {tid:this.tid}).then(response=>{
             const {topic, board, message} = response.data;
@@ -108,4 +108,34 @@ Page({
             self.loadMoreAble = response.data.items.length >= 20;
         });
     },
+
+    formSubmit : function(e){
+        const {tid, boardid} = self.data.topic;
+        const {message} = e.detail.value;
+
+        if (message.length < 2) {
+            wx.showToast({
+              title: '回复内容不能少于两个字哦',
+              icon:'none'
+            });
+            return false;
+        }
+
+        if(self.submiting) {
+          return false;
+        } else {
+            self.submiting = true;
+        }
+
+        Util.request('/forum/reply', {
+            tid,
+            boardid,
+            message
+        }, 'POST').then(response=>{
+            self.submiting = false;
+            self.fetchData();
+        }).catch(error=>{
+            self.submiting = false;
+        });
+    }
 });

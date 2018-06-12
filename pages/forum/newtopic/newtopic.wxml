@@ -1,0 +1,16 @@
+<!--pages/forum/newtopic/newtopic.wxml-->
+<view class="container">
+    <view class="topic-form">
+        <form bindsubmit='formSubmit'>
+            <view class="topic-form-group">
+                <input type="text" name="title" class="topic-form-input" placeholder="标题，不少于5个字"/>
+            </view>
+            <view class="topic-form-group">
+                <textarea name="message" class="topic-form-textarea" placeholder="填写话题内容，至少5个字"></textarea>
+            </view>
+            <view class="topic-form-group">
+                <button form-type='submit' class="topic-form-button">发布话题</button>
+            </view>
+        </form>
+    </view>
+</view>

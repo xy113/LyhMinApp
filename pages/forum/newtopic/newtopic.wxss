@@ -1,0 +1,43 @@
+/* pages/forum/newtopic/newtopic.wxss */
+
+.topic-form {
+    display: block;
+    padding: 20px;
+}
+
+.topic-form-group{
+    margin-bottom: 20px;
+}
+
+.topic-form-input{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    color: #333;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.topic-form-textarea{
+    width: 100%;
+    height: 160px;
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 5px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.topic-form-button{
+    width: 100%;
+    background-color: #30C6B1;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 1px 0;
+    border-radius: 6px;
+}
