@@ -17,7 +17,8 @@
     "pages/pages/detail/detail",
     "pages/forum/topiclist/topiclist",
     "pages/forum/topic/topic",
-    "pages/forum/newtopic/newtopic"
+    "pages/forum/newtopic/newtopic",
+    "pages/member/feedback/feedback"
   ],
   "window": {
     "backgroundTextStyle": "dark",

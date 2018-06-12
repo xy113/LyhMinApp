@@ -1,5 +1,5 @@
 /**app.wxss**/
-/* @import './asset/css/iconfont/iconfont.css'; */
+@import 'asset/iconfont/iconfont.wxss';
 page{
   background-color: #2E3551;
   color: #fff;
@@ -37,4 +37,85 @@ view{
   font-size: 16px; 
   background-color: #394263; 
   color: #ffffff;
+}
+
+.tableview{
+    display: block;
+    line-height: 1;
+}
+
+.tableview-row{
+    padding: 13px 10px;
+    border-bottom: 1px #4A5270 solid;
+    display: flex;
+}
+
+.tableview-cell{
+    align-self: center;
+    align-items: flex-start;
+}
+
+.tableview-cell .image{
+    width: 25px;
+    height: 25px;
+}
+
+.tableview-cell .iconfont{
+    font-size: 25px;
+    line-height: 1;
+}
+
+.tableview-cell .textlabel{
+    font-size: 16px;
+}
+
+.tableview-cell .detaillabel{
+    font-size: 14px;
+    text-align: right;
+}
+
+.tableview-cell-flex{
+    flex: 1;
+}
+
+.form {
+    display: block;
+    padding: 20px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-input{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    color: #333;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.form-textarea{
+    width: 100%;
+    height: 160px;
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 5px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.form-button{
+    width: 100%;
+    background-color: #30C6B1;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 1px 0;
+    border-radius: 6px;
 }

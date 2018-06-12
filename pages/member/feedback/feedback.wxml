@@ -1,0 +1,16 @@
+<!--pages/member/feedback/feedback.wxml-->
+<view class="container">
+    <view class="form">
+        <form bindsubmit='formSubmit'>
+            <view class="form-group">
+                <input type="text" name="title" class="form-input" placeholder="请填写你要反馈的主题"/>
+            </view>
+            <view class="form-group">
+                <textarea name="message" class="form-textarea" placeholder="简单描述一下你要反应的问题"></textarea>
+            </view>
+            <view class="form-group">
+                <button form-type='submit' class="form-button">提交</button>
+            </view>
+        </form>
+    </view>
+</view>

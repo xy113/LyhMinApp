@@ -20,18 +20,14 @@
 
 .mine-header-content-avatar{
     /* height: 33.33%; */
-    width: 20%; 
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     border: 5px #FFF solid;
     margin: 9% auto 15px;
     display: block;
     position: relative;
     z-index: 1;
-}
-
-.tableview {
-    display: block;
-    background-color: #394263;
 }
 
 .mine-header-content-name{
