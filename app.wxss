@@ -119,3 +119,39 @@ view{
     padding: 1px 0;
     border-radius: 6px;
 }
+
+.tabview{
+    display: flex;
+    border-bottom: 1px #4A5270 solid;
+}
+
+.tabview .tab{
+    flex: 1;
+    display: block;
+    padding: 15px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.tabview .active{
+    color: #239F86;
+    border-bottom: 2px #239F86 solid;
+    margin-bottom: -1px;
+}
+
+.tabbar{
+    position: relative;
+    height: 49px;
+    display: block;
+}
+
+.tabbar .bar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 49px;
+    background-color: #2E3551;
+    border-top: 1px #4A5270 solid;
+}

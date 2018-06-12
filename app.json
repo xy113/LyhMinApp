@@ -18,7 +18,12 @@
     "pages/forum/topiclist/topiclist",
     "pages/forum/topic/topic",
     "pages/forum/newtopic/newtopic",
-    "pages/member/feedback/feedback"
+    "pages/member/feedback/feedback",
+    "pages/member/archive/archive",
+    "pages/member/resume/resume",
+    "pages/member/xiaoyou/xiaoyou",
+    "pages/member/favorite/favorite",
+    "pages/member/message/message"
   ],
   "window": {
     "backgroundTextStyle": "dark",

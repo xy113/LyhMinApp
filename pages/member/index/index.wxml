@@ -5,54 +5,66 @@
     </view>
 </view>
 <view class='tableview'>
-    <view class="tableview-row">
-        <view class="tableview-cell">
-            <text class="iconfont icon-people"></text>
+    <navigator url='../archive/archive'>
+        <view class="tableview-row">
+            <view class="tableview-cell">
+                <text class="iconfont icon-people"></text>
+            </view>
+            <view class="tableview-cell tableview-cell-flex">
+                <text class="textlabel">会员档案</text>
+            </view>
         </view>
-        <view class="tableview-cell tableview-cell-flex">
-            <text class="textlabel">会员档案</text>
+    </navigator>
+    <navigator url='../resume/resume'>
+        <view class="tableview-row">
+            <view class="tableview-cell">
+                <text class="iconfont icon-text"></text>
+            </view>
+            <view class="tableview-cell tableview-cell-flex">
+                <text class="textlabel">我的简历</text>
+            </view>
         </view>
-    </view>
-    <view class="tableview-row">
-        <view class="tableview-cell">
-            <text class="iconfont icon-text"></text>
+    </navigator>
+    <navigator url='../xiaoyou/xiaoyou'>
+        <view class="tableview-row">
+            <view class="tableview-cell">
+                <text class="iconfont icon-group"></text>
+            </view>
+            <view class="tableview-cell tableview-cell-flex">
+                <text class="textlabel">我的校友</text>
+            </view>
         </view>
-        <view class="tableview-cell tableview-cell-flex">
-            <text class="textlabel">我的简历</text>
+    </navigator>
+    <navigator url='../xiaoyou/xiaoyou'>
+        <view class="tableview-row">
+            <view class="tableview-cell">
+                <text class="iconfont icon-creative"></text>
+            </view>
+            <view class="tableview-cell tableview-cell-flex">
+                <text class="textlabel">我的投递</text>
+            </view>
         </view>
-    </view>
-    <view class="tableview-row">
-        <view class="tableview-cell">
-            <text class="iconfont icon-group"></text>
+    </navigator>
+    <navigator url='../favorite/favorite'>
+        <view class="tableview-row">
+            <view class="tableview-cell">
+                <text class="iconfont icon-favor"></text>
+            </view>
+            <view class="tableview-cell tableview-cell-flex">
+                <text class="textlabel">我的收藏</text>
+            </view>
         </view>
-        <view class="tableview-cell tableview-cell-flex">
-            <text class="textlabel">我的校友</text>
+    </navigator>
+    <navigator url='../message/message'>
+        <view class="tableview-row">
+            <view class="tableview-cell">
+                <text class="iconfont icon-message"></text>
+            </view>
+            <view class="tableview-cell tableview-cell-flex">
+                <text class="textlabel">我的留言</text>
+            </view>
         </view>
-    </view>
-    <view class="tableview-row">
-        <view class="tableview-cell">
-            <text class="iconfont icon-creative"></text>
-        </view>
-        <view class="tableview-cell tableview-cell-flex">
-            <text class="textlabel">我的投递</text>
-        </view>
-    </view>
-    <view class="tableview-row">
-        <view class="tableview-cell">
-            <text class="iconfont icon-favor"></text>
-        </view>
-        <view class="tableview-cell tableview-cell-flex">
-            <text class="textlabel">我的收藏</text>
-        </view>
-    </view>
-    <view class="tableview-row">
-        <view class="tableview-cell">
-            <text class="iconfont icon-message"></text>
-        </view>
-        <view class="tableview-cell tableview-cell-flex">
-            <text class="textlabel">我的留言</text>
-        </view>
-    </view>
+    </navigator>
     <navigator url='../feedback/feedback'>
       <view class="tableview-row">
         <view class="tableview-cell">

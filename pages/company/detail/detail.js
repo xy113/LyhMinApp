@@ -80,5 +80,15 @@ Page({
      */
     onShareAppMessage: function () {
 
+    },
+    
+    addToCollection: function (e) {
+        const data_id = e.currentTarget.dataset.id;
+        Util.addToCollection(data_id, 'company', () => {
+            wx.showToast({
+                title:'已成功加入收藏夹',
+                icon:'success'
+            });
+        });
     }
-})
+});

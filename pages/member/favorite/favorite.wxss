@@ -1,0 +1,17 @@
+/* pages/member/favorite/favorite.wxss */
+
+.favor-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+}
+
+.favor-image-cell{
+    margin-right: 10px;
+}
+
+.favor-time{
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 10px;
+}

@@ -1,2 +1,2 @@
 <!--pages/post/detail/detail.wxml-->
-<web-view src="{{url}}"></web-view>
+<web-view src="{{url}}" bindmessage="addToCollection"></web-view>

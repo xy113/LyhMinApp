@@ -35,4 +35,12 @@
             </view>
         </view>
     </view>
+    <view class="tabbar">
+        <view class="bar">
+            <view class="tabview">
+                <view class="tab" data-id="{{job.job_id}}" bindtap="addToCollection"><text>加入收藏</text></view>
+                <view class="tab" data-id="{{job.job_id}}" bindtap="postResume"><text>投递简历</text></view>
+            </view>
+        </view>
+    </view>
 </view>

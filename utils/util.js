@@ -125,11 +125,18 @@ const getPostUrl = (aid) => {
     return 'https://lyh.songdewei.com/mobile/post/detail/'+aid+'.html';
 };
 
+const addToCollection = (data_id, data_type, callback = ()=>null) => {
+    request('/collection/add', {data_id, data_type}).then(response => {
+        callback(response);
+    });
+};
+
 module.exports = {
     formatTime,
     request,
     checkSession,
     login,
     getUserInfo,
-    getPostUrl
+    getPostUrl,
+    addToCollection
 };

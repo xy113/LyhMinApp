@@ -1,0 +1,25 @@
+<!--pages/member/favorite/favorite.wxml-->
+<view class="container">
+    <view class="tabview">
+        <block wx:for="{{tabs}}" wx:for-index="index" wx:for-item="item" wx:key="{{index}}">
+        <view class="tab{{tab===item.type ? ' active' : ''}}" data-type="{{item.type}}" bindtap='onSwitchTab'><text>{{item.text}}</text></view>
+        </block>
+    </view>
+    <view class="tableview">
+        <block wx:for="{{items}}" wx:for-index="index" wx:for-item="item" wx:key="{{item.id}}">
+            <navigator url="{{item.url}}">
+                <view class="tableview-row">
+                    <view class="tableview-cell favor-image-cell">
+                        <image class="favor-image" src="{{item.image}}"></image>
+                    </view>
+                    <view class="tableview-cell">
+                        <text class="textlabel">{{item.title}}</text>
+                        <view class="favor-time">
+                            <text>{{item.formatted_time}}</text>
+                        </view>
+                    </view>
+                </view>
+            </navigator>
+        </block>
+    </view>
+</view>

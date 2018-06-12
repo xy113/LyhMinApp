@@ -1,7 +1,7 @@
 <!--pages/company/detail/detail.wxml-->
 <view class="container">
     <view class="company-detail">
-        <view class="company-name">{{company.company_name}}}</view>
+        <view class="company-name">{{company.company_name}}</view>
         <view class="company-info">
             <view class="company-info-item">
                 <text class="label">联 系 人</text>
@@ -34,6 +34,13 @@
                   </view>
                 </navigator>
             </block>
+        </view>
+    </view>
+    <view class="tabbar">
+        <view class="bar">
+            <view class="tabview">
+                <view class="tab" data-id="{{company.company_id}}" bindtap="addToCollection"><text>加入收藏</text></view>
+            </view>
         </view>
     </view>
 </view>
