@@ -1,2 +1,27 @@
 <!--pages/member/resume/resume.wxml-->
-<text>pages/member/resume/resume.wxml</text>
+<view class="container">
+    <view class="tableview" wx:if="{{items.length > 0}}">
+        <block wx:for="{{items}}" wx:for-item="item" wx:for-index="index" wx:key="{{index}}">
+            <view class="tableview-row">
+                <view class="tableview-cell resume-title"><text class="textlabel">{{item.title}}</text></view>
+                <view class="resume-act">
+                    <navigator url="./newresume?id={{item.id}}">
+                        <text>编辑</text>
+                    </navigator>
+                </view>
+                <view class="resume-act" bindtap="deleteResume" data-id="{{item.id}}"><text>删除</text></view>
+            </view>
+        </block>
+    </view>
+    <view class="noaccess" wx:else><text>你还没有创建简历</text></view>
+    <view class="footer">
+        <view class="btn green" bindtap='generateResume'>
+            <text>+生成会员简历</text>
+        </view>
+        <view class="btn red">
+            <navigator url="./newresume">
+                <text>+新增简历</text>
+            </navigator>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,66 @@
+<!--pages/member/archive/newarchive.wxml-->
+<!--pages/member/resume/newresume.wxml-->
+<view class='container'>
+    <view class="form">
+        <form bindsubmit="onSubmit">
+            <view class="form-group">
+                <view class="label"><text>姓名</text></view>
+                <view class="input">
+                    <input type="text" name="fullname" value="{{archive.fullname}}" class="form-input" placeholder="你的姓名"/>
+                </view>
+            </view>
+            <view class="form-group">
+                <view class="label"><text>性别</text></view>
+                <view class="input">
+                    <radio-group name="sex">
+                        <radio name="sex" class="form-radio" checked="checked" value="1">男</radio>
+                        <radio name="sex" class="form-radio" value="0">女</radio>
+                    </radio-group>
+                </view>
+            </view>
+            <view class="form-group">
+                <view class="label"><text>电话</text></view>
+                <view class="input">
+                    <input type="text" name="phone" value="{{archive.phone}}" class="form-input" placeholder="联系电话"/>
+                </view>
+            </view>
+            <view class="form-group">
+                <view class="label"><text>生日</text></view>
+                <view class="input">
+                    <picker name="birthday" mode="date" value="{{birthday}}" start="1900-01-01" end="2018-01-01" bindchange="onPickerBirthday">
+                        <view class="form-input form-input-text">{{birthday ? birthday : '选择生日'}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="form-group">
+                <view class="label"><text>就读大学</text></view>
+                <view class="input">
+                    <input type="text" name="university" value="{{archive.university}}" class="form-input" placeholder="就读大学"/>
+                </view>
+            </view>
+            <view class="form-group">
+                <view class="label"><text>入学年份</text></view>
+                <view class="input">
+                    <picker name="enrollyear" mode="date" value="{{enrollyear}}" start="1950-01-01" end="2018-01-01" bindchange="onPickerEnrollyear">
+                        <view class="form-input form-input-text">{{enrollyear ? enrollyear : '选择入学年份'}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="form-group">
+                <view class="label"><text>籍贯</text></view>
+                <view class="input">
+                    <input type="text" name="birthplace" value="{{archive.birthplace}}" class="form-input" placeholder="籍贯"/>
+                </view>
+            </view>
+            <view class="form-group">
+                <view class="label"><text>所在地</text></view>
+                <view class="input">
+                    <input type="text" name="location" value="{{archive.location}}" class="form-input" placeholder="所在地"/>
+                </view>
+            </view>
+            <view class="form-group">
+                <button form-type="submit" class="form-button">提交</button>
+            </view>
+        </form>
+    </view>
+</view>

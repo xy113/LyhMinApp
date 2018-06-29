@@ -1,2 +1,72 @@
 <!--pages/member/archive/archive.wxml-->
-<text>pages/member/archive/archive.wxml</text>
+<view class="container">
+    <view class="user-header">
+        <view class="user-header-content">
+            <view>
+                <image src="{{userInfo.avatarUrl}}" class="avatar"></image>
+            </view>
+            <view class="nickname"><text class="name">{{userInfo.nickName}}</text></view>
+            <view class="data">
+                <view class="row">
+                    <text class="left">联谊会职务:</text>
+                    <text class="right">普通会员</text>
+                </view>
+                <view class="row">
+                    <text class="left">人气指数:</text>
+                    <text class="right">{{archive.stars}}</text>
+                </view>
+                <view class="row">
+                    <text class="left">认证状态:</text>
+                    <text class="right">认证通过</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class='title-bar'>
+        <view class='title-bar-title'>基本信息</view>
+        <view class='cb'></view>
+    </view>
+    <view class="content" wx:if="{{archive}}">
+        <view class="group">
+            <text>会员ID: </text>
+            <text>{{archive.id}}</text>
+        </view>
+        <view class="group">
+            <text>姓名: </text>
+            <text>{{archive.fullname}}</text>
+        </view>
+        <view class="group">
+            <text>性别: </text>
+            <text>{{archive.sex ? '男' : '女'}}</text>
+        </view>
+        <view class="group">
+            <text>籍贯: </text>
+            <text>{{archive.birthplace}}</text>
+        </view>
+        <view class="group">
+            <text>所在地: </text>
+            <text>{{archive.location}}</text>
+        </view>
+        <view class="group">
+            <text>出生日期: </text>
+            <text>{{archive.birthday}}</text>
+        </view>
+        <view class="group">
+            <text>联系电话: </text>
+            <text>{{archive.phone}}</text>
+        </view>
+        <view class="edit">
+            <navigator url="./newarchive">
+                <text class="iconfont icon-edit_light"></text>
+                <text>编辑</text>
+            </navigator>
+        </view>
+    </view>
+    <view class="add-new" wx:else>
+        <navigator url="./newarchive">
+            <text>+创建档案</text>
+        </navigator>
+    </view>
+</view>
+

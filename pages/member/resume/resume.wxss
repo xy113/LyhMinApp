@@ -1,1 +1,41 @@
 /* pages/member/resume/resume.wxss */
+.noaccess{
+    font-size: 12px;
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+
+.resume-title{
+    flex: 1;
+}
+
+.resume-act{
+    font-size: 14px;
+    padding: 2px 10px 0;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 49px;
+    display: flex;
+}
+
+.footer .btn{
+    flex: 1;
+    height: 49px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 49px;
+}
+
+.footer .green{
+    background-color: #2FC2AE;
+}
+
+.footer .red{
+    background-color: #F27961;
+}

@@ -1,1 +1,60 @@
 /* pages/member/message/message.wxss */
+.user-header{
+    background-image: url("https://lyh.songdewei.com/images/mobile/head-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: relative;
+    display: block;
+    padding: 20px 0;
+}
+
+.user-header-content{
+    display: block;
+    text-align: center;
+}
+
+.user-header-content .nickname{
+    text-align: center;
+    display: block;
+    padding: 5px 0;
+}
+
+.user-header-content .nickname .name{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.user-header-content .avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px #FFF solid;
+    display: inline-block;
+}
+
+.user-header-content .data{
+    text-align: center;
+    padding: 5px 0;
+}
+
+.user-header-content .row{
+    display: flex;
+    font-size: 12px;
+    padding: 3px 5px;
+    line-height: 1;
+}
+
+.user-header-content .row .left{
+    flex: 1;
+    text-align: right;
+}
+
+.user-header-content .row .right{
+    text-align: left;
+    flex: 1;
+    padding-left: 5px;
+}

@@ -23,7 +23,9 @@
     "pages/member/resume/resume",
     "pages/member/xiaoyou/xiaoyou",
     "pages/member/favorite/favorite",
-    "pages/member/message/message"
+    "pages/member/message/message",
+    "pages/member/resume/newresume",
+    "pages/member/archive/newarchive"
   ],
   "window": {
     "backgroundTextStyle": "dark",

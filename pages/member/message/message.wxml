@@ -1,2 +1,30 @@
 <!--pages/member/message/message.wxml-->
-<text>pages/member/message/message.wxml</text>
+<view class="container">
+    <view class="user-header">
+        <view class="user-header-content">
+            <view>
+                <image src="{{userInfo.avatarUrl}}" class="avatar"></image>
+            </view>
+            <view class="nickname"><text class="name">{{userInfo.nickName}}</text></view>
+            <view class="data">
+                <view class="row">
+                    <text class="left">联谊会职务:</text>
+                    <text class="right">普通会员</text>
+                </view>
+                <view class="row">
+                    <text class="left">人气指数:</text>
+                    <text class="right">999</text>
+                </view>
+                <view class="row">
+                    <text class="left">认证状态:</text>
+                    <text class="right">认证通过</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class='title-bar'>
+        <view class='title-bar-title'>留言板</view>
+        <view class='cb'></view>
+    </view>
+</view>

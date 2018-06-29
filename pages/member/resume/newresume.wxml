@@ -1,0 +1,48 @@
+<!--pages/member/resume/newresume.wxml-->
+<view class='container'>
+  <view class="form">
+      <form bindsubmit="onSubmit">
+          <view class="form-group">
+              <input type="text" name="title" value="{{resume.title}}" class="form-input" placeholder="简历名称"/>
+          </view>
+          <view class="form-group">
+              <input type="text" name="name" value="{{resume.name}}" class="form-input" placeholder="你的姓名"/>
+          </view>
+          <view class="form-group">
+              <view class="radio-wrapper">
+                  <text class="text">性别: </text>
+                  <radio-group name="gender">
+                      <radio name="gender" class="form-radio" checked="checked" value="1">男</radio>
+                      <radio name="gender" class="form-radio" value="0">女</radio>
+                  </radio-group>
+              </view>
+          </view>
+          <view class="form-group">
+              <input type="text" name="age" value="{{resume.age}}" class="form-input" placeholder="年龄"/>
+          </view>
+          <view class="form-group">
+              <input type="text" name="phone" value="{{resume.phone}}" class="form-input" placeholder="电话"/>
+          </view>
+          <view class="form-group">
+              <input type="text" name="email" value="{{resume.email}}" class="form-input" placeholder="邮箱"/>
+          </view>
+          <view class="form-group">
+              <picker name="education" value="{{eduIndex}}" range="{{eduArray}}" bindchange="onPickerEdu">
+                  <view class="form-input form-input-text">{{eduArray[eduIndex]}}</view>
+              </picker>
+          </view>
+          <view class="form-group">
+              <input type="text" name="work_exp" value="{{resume.work_exp}}" class="form-input" placeholder="工作经验"/>
+          </view>
+          <view class="form-group">
+              <input type="text" name="address" value="{{resume.address}}" class="form-input" placeholder="所在地"/>
+          </view>
+          <view class="form-group">
+              <textarea name="introduction" class="form-textarea" placeholder="简单介绍一下自己" value="{{resume.introduction}}"></textarea>
+          </view>
+          <view class="form-group">
+              <button form-type="submit" class="form-button">提交</button>
+          </view>
+      </form>
+  </view>
+</view>

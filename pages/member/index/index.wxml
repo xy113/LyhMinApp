@@ -25,26 +25,26 @@
             </view>
         </view>
     </navigator>
-    <navigator url='../xiaoyou/xiaoyou'>
-        <view class="tableview-row">
-            <view class="tableview-cell">
-                <text class="iconfont icon-group"></text>
-            </view>
-            <view class="tableview-cell tableview-cell-flex">
-                <text class="textlabel">我的校友</text>
-            </view>
-        </view>
-    </navigator>
-    <navigator url='../xiaoyou/xiaoyou'>
-        <view class="tableview-row">
-            <view class="tableview-cell">
-                <text class="iconfont icon-creative"></text>
-            </view>
-            <view class="tableview-cell tableview-cell-flex">
-                <text class="textlabel">我的投递</text>
-            </view>
-        </view>
-    </navigator>
+    <!--<navigator url='../xiaoyou/xiaoyou'>-->
+        <!--<view class="tableview-row">-->
+            <!--<view class="tableview-cell">-->
+                <!--<text class="iconfont icon-group"></text>-->
+            <!--</view>-->
+            <!--<view class="tableview-cell tableview-cell-flex">-->
+                <!--<text class="textlabel">我的校友</text>-->
+            <!--</view>-->
+        <!--</view>-->
+    <!--</navigator>-->
+    <!--<navigator url='../xiaoyou/xiaoyou'>-->
+        <!--<view class="tableview-row">-->
+            <!--<view class="tableview-cell">-->
+                <!--<text class="iconfont icon-creative"></text>-->
+            <!--</view>-->
+            <!--<view class="tableview-cell tableview-cell-flex">-->
+                <!--<text class="textlabel">我的投递</text>-->
+            <!--</view>-->
+        <!--</view>-->
+    <!--</navigator>-->
     <navigator url='../favorite/favorite'>
         <view class="tableview-row">
             <view class="tableview-cell">
